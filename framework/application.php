@@ -31,7 +31,7 @@
          */
         private function __construct($fichierIni) { 
             $this->configuration = Configuration::getInstance($fichierIni);
-            $this->base = new PDO('mysql:host=localhost;dbname=coupdepouce', 'root', 'edenlevitha2013');
+            $this->base = new PDO('mysql:host=localhost;dbname=coupdepouce', 'root', '');
             $this->base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->cheminAbsolu = realpath('.');
         }
